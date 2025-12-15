@@ -1,0 +1,14 @@
+/* Global reset and defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth fonts */
+body {
+  font-family: var(--font-sans), sans-serif;
+  background-color: #0b0f19;
+  color: white;
+}
+
