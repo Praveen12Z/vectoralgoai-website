@@ -1,22 +1,14 @@
 import "./globals.css";
-import type { Metadata } from "next";
 
-
-export const metadata: Metadata = {
+export const metadata = {
   title: "VectorAlgoAI",
-  description: "AI-powered trading strategy validation.",
+  description: "AI-powered strategy validation for serious traders"
 };
 
-/**
- * CLEAN ROOT LAYOUT — prevents hydration mismatches
- */
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        suppressHydrationWarning
-        className={`${GeistSans.variable} ${GeistMono.variable} antialiased`}
-      >
+    <html lang="en">
+      <body className="antialiased">
         {children}
       </body>
     </html>
